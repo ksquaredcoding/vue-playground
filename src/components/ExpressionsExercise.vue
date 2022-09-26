@@ -9,16 +9,25 @@
             below:
           </p>
 
-          <p>{{}}</p>
+          <p>{{Math.sqrt(2+2)}}</p>
         </div>
         <div class="border p-1">
           <p>
             Use interpolation to get the customary Hello, World! to display on
             the screen. Don't forget your quotes
           </p>
-          <p>{{}}</p>
+          <p>{{message}}</p>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+export default {
+  setup() {
+    let message = "Hello World!"
+    return { message }
+  }
+}
+</script>
